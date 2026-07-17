@@ -3,6 +3,15 @@ package array;
 import java.util.ArrayList;
 
 public class SubArray {
+	private int account;
+	public int getAccount() {
+		return account;
+	}
+
+	public void setAccount(int account) {
+		this.account = account;
+	}
+
 	static ArrayList<Integer> subarraySum(int[] arr, int n, int s) {
 		ArrayList<Integer> ls = new ArrayList<>();
 		int sum = arr[0], start = 0;
@@ -26,6 +35,18 @@ public class SubArray {
 
 	public static void main(String[] args) {
 		int arr[] = { 1, 2, 3, 7, 5 };
-		subarraySum(arr, arr.length, 12).forEach(System.out::print);
+		String str = "Test";
+		boolean flag = true;
+		double db = 1.2d;
+		
+		/*
+		 * for(int i=0;i<5;i++) { System.out.print(i); }
+		 */
+		int i=0;
+		while(i<=5) {
+			System.out.print(i);
+			i++;
+		}
+		//subarraySum(arr, arr.length, 12).forEach(System.out::print);
 	}
 }

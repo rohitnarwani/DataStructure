@@ -24,6 +24,7 @@ public class InOrderTraversal {
 			return;
 		}
 		inOrder(node.left, ls);
+		System.out.println(node.data);
 		ls.add(node.data);
 		inOrder(node.right, ls);
 	}
